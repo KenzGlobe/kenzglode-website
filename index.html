@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kenz RGB color picker</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #333;
+      align-items: center;
+      justify-content: center;
+      font-family: courier;
+      margin-bottom: 100px;
+    }
+    .value {
+      font-size: 30px;
+      margin-left: 10px;
+      margin-top: 30px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+    }
+    .pick {
+      background: linear-gradient(90deg, #2b2eff, #a42bff, #ff00b2, #ff1515, #ff5e00, #ffc700, #c4ff15, #15ff38, #15ffb6, #2bc0ff, #2b2eff);
+      width: 200px;
+      height: 40px;
+      border: 5px double #1c1c1c;
+      border-radius: 30px;
+      margin-top: 30px;
+      margin-left: 50px;
+      font-family: courier;
+      font-weight: bold;
+      color: black;
+      font-size: 25px;
+    }
+    .color-picker {
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+    .color-preview {
+      width: 200px;
+      height: 200px;
+      background: #fff;
+      border-radius: 50%;
+      border: 15px double #000;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+    }
+    .sliders {
+      display: block;
+    }
+    .R {
+      display: flex;
+    }
+    .para {
+      font-size: 30px;
+      Color: white;
+      font-weight: bold;
+      margin-left: -70px;
+      padding-right: 15px
+    }
+    .input {
+      width: ;
+    }
+    #r-value {
+      font-size: 30px;
+      Color: white;
+      font-weight: bold;
+      margin-left: 100px;
+    }
+    #g-value {
+      font-size: 30px;
+      Color: white;
+      font-weight: bold;
+      padding-left: 0px;
+      margin-left: 100px;
+    }
+    #b-value {
+      font-size: 30px;
+      Color: white;
+      font-weight: bold;
+      padding-left: 0px;
+      margin-left: 100px;
+    }
+    .button {
+      margin-top: 30px;
+      margin-left: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div class="color-preview"><div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="color-picker">
+      
+      <div class="R">
+        <p class="para">R</p>
+        <input type="range" min="0" max="255" value="255" class="input" id="R">
+        <p id="r-value">255</p>
+      </div>
+      
+      <div class="R">
+        <p class="para">G</p>
+        <input type="range" min="0" max="255" value="255" class="input" id="G">
+        <p id="g-value">255</p>
+      </div>
+      
+      <div class="R">
+        <p class="para">B</p>
+        <input type="range" min="0" max="255" value="255" class="input" id="B">
+        <p id="b-value">255</p>
+      </div>
+      
+    </div>
+    
+    <p class="value">RGB(<n id="r2-value">255</n>, <n id="g2-value">255</n>, <n id="b2-value">255</n>)</p>
+    <button class="pick">Choose</button>
+  </div>
+  <script>
+    let r = 255;
+        g = 255;
+        b = 255
+     document.querySelector(`button.pick`).onclick = function () {
+       document.querySelector(`.color-picker`).style.display = `flex`;
+}
+
+document.querySelector(`.pick`).onclick = function () {
+  alert(`RGB(` + R.value + `, ` + G.value + `, ` + B.value + `)`)
+}
+ 
+
+setInterval(function () {
+  document.getElementById(`r-value`).innerHTML = R.value;
+  document.getElementById(`g-value`).innerHTML = G.value;
+  document.getElementById(`b-value`).innerHTML = B.value;
+  
+ document.getElementById(`r2-value`).innerHTML = R.value;
+  document.getElementById(`g2-value`).innerHTML = G.value;
+  document.getElementById(`b2-value`).innerHTML = B.value;
+   document.querySelectorAll(`.input`).forEach(range => {
+    range.onchange = function () {
+      document.querySelector(`.color-preview`).style.backgroundColor = ` rgb(${document.querySelectorAll(`.input`)[0].value}, ${document.querySelectorAll(`.input`)[1].value}, ${document.querySelectorAll(`.input`)[2].value}
+    )`}
+  })
+}, 100)
+  </script>
+</body>
+</html>
