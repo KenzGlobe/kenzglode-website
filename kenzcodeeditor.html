@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale= 1.0"/>
+  <title>Kenz Globe | Code Editor</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="/storage/emulated/0/Android/data/com.teejay.trebedit/files/TrebEdit user files/The App/TheApp/003KenzLearnCoding_CodeEditor/003KenzLearnCoding_CodeEditor.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=settings" />
+  <!-- <link rel="stylesheet" href="001_Css/001_Css_w230.css">
+  <link rel="stylesheet" href="001_Css/001_Css_w240.css">
+  <link rel="stylesheet" href="001_Css/001_Css_w250.css">
+  <link rel="stylesheet" href="001_Css/001_Css_w260.css">
+  <link rel="stylesheet" href="001_Css/001_Css_w275.css">
+  <link rel="stylesheet" href="001_Css/001_Css_w285.css">
+  <link rel="stylesheet" href="001_Css/001_Css_w300.css">
+  <link rel="stylesheet" href="001_Css/001_Css_w320.css">
+  <link rel="stylesheet" href="001_Css/001_Css_w345.css">
+  <link rel="stylesheet" href="001_Css/001_Css_w420.css">
+  <link rel="stylesheet" href="001_Css/001_Css_w430.css">
+  <link rel="stylesheet" href="001_Css/001_Css_w500.css">
+  <link rel="stylesheet" href="001_Css/001_Css_w560.css">
+  <link rel="stylesheet" href="001_Css/001_Css_w600.css">
+  <link rel="stylesheet" href="001_Css/001_Css_w960.css"> -->
+</head>
+<body>
+  <div class="container">
+         <div class="body">
+            <div class="heading">
+            
+                  <header>
+                        <span class="div"><n>&lt</n></span><span class="div2"><n>/</n></span><span class="div3" id="nice">C</span><span class="div4">o</span><span class="div5">d</span><span class="div6">e</span><span class="div">E</span><span class="div2">d</span><span class="div3">i</span><span class="div4">t</span><span class="div5">o</span><span class="div6">r</span><span class="div2"><n>&gt</n></span>
+                  </header>
+                  <div style="width: 48px; cursor: pointer; background: none; position: absolute; top: 0px; left: 480px; padding-left: 15px; padding-right: ; padding-top: 7px; padding-bottom: 2px;">
+                        <a href="Pro.html" style="cursor: none;"><img src="003_Images/Lock.png" alt="" id="pro" title="Upgrade to Premium"></a>
+                  </div>
+            </div>
+            <div>
+              <div style="position: fixed; top: 40px; left: 0px; background: #fff; border: 4px double #251a68; width: 100%; height: 40px;">
+                <span>
+                 
+                </span>
+              </div>
+              <div id="html">
+                <textarea id="html-code" onkeyup="run()"></textarea>
+              </div>
+              <div id="css">
+                <textarea id="css-code" onkeyup="run()">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}</textarea>
+              </div>
+              <div id="js">
+                <textarea id="js-code" onkeyup="run()"></textarea>
+              </div>
+              <div style="position: fixed; top: 80px; left: 0px; background: white; border: 4px double #251a68; width: 100%; height: 40px; display: flex;">
+                <span id="cssbtn">
+                 <button id="btnCss" onclick="css()"><img src="003_Images/logo_css.png" alt="" id="cssImg"><n id="cssName"><marquee id="fileNameCss"></marquee></n></button>
+                </span>
+                <span>
+                 <button id="btnCss2" onclick="html()"><img src="003_Images/logo_html.png" alt="" id="cssImgh"><n><marquee id="cssName2"></marquee></n></button>
+                </span>
+                <span>
+                 <button id="btnCss" onclick="js()"><img src="003_Images/js.png" alt="" id="cssImgjs"><n><marquee id="cssName3">script.js</marquee></n></button>
+                </span>
+              </div>
+            </div>
+            <div id="Result">
+              <div style="width: 48px; cursor: pointer; background: none; position: absolute; top: 44px; left: 540px; padding-left: 15px; padding-right: ; padding-top: 7px; padding-bottom: 2px;" id="img1">
+                <img src="003_Images/Run.png" id="out" style="width: 18px;" onclick="out()">
+              </div>
+              <div style="width: 48px; cursor: pointer; background: none; position: absolute; top: 45px; left: -300px; padding-left: 15px; padding-right: ; padding-top: 7px; padding-bottom: 2px;" id="img2">
+                <img src="003_Images/Back.png" alt="" style="width: 20px; margin-left: 0px; margin-top: -20px; transform: rotate(180deg);" id="inout" onclick="inout()">
+              </div>
+              <div id="frame">
+                <iframe id="output"></iframe>
+              </div>
+            </div>
+            <div class="dd">
+              <button class="dd-btn"><img src="003_Images/threedots.png" alt="" style="width: 7px;"></button>
+              <div class="dd-content">
+                <a href="html_lessons.html"><img src="003_Images/logo_html.png" alt="" style="padding: 0px; width: 20px;">&nbsp&nbsp&nbsp&nbsp&nbspHTML</a>
+                <a href="#"><img src="003_Images/logo_css.png" alt="" style="padding: 0px; width: 20px;">&nbsp&nbsp&nbsp&nbsp&nbspCSS</a>
+                <a href="#"><img src="003_Images/js.png" alt="" style="padding: 0px; width: 17px;"><l style="margin-top: -8px; font-family: Georgia;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspJavaScript</l></a>
+                <a href="../002KenzLearnCodingSettings/002KenzLearnCodingSettings.html" style="padding: 10px;">&nbsp&nbsp&nbsp<span class="material-symbols-outlined">
+settings
+</span>&nbsp&nbsp&nbsp&nbspSettings</a>
+                <a href="#" style="padding: 10px;">&nbsp&nbsp&nbsp<i class="fa-solid fa-folder" style="font-size: 20px; color: #444; text-shadow: -0.5px 0 #444, 0 0.5px #444, 0.5px 0 #444, 0 -0.5px #444;"></i>&nbsp&nbsp&nbsp&nbsp&nbspAll folders</a>
+              </div>
+            </div>
+            <footer class="foot">
+                  <marquee style="overflow: scroll; border: none;"><p style="font-family: Georgia; text-align: center;">Kenz Coding and Programming, Copyright &copy; 2024<a href="#" style="color: #37416e; text-decoration: none; font-weight: bold; cursor: none;"> About Us</a></p></marquee>
+            </footer>
+         </div>
+  </div>
+  <div id="longPressCss">
+    <div>
+      <form method="GET"><br>
+        <p style="font-size: 30px; color: #fff; font-weight: bold; text-align: center;"><img src="003_Images/EmptyFile.png" style="width: 20px;"> New file</p><br>
+         <input required type="text" placeholder="Enter Filename:" style="background: #aaa; padding: 15px; border: 3px solid black; border-radius: 20px; margin-left: 0px; width: 100%; font-size: 20px; font-weight: bolder; outline: none;" id="nameurcss"><br>
+         <button style="background: #c4ff6a; padding: 10px; border: 3px solid black; border-radius: 20px; width: 100%; font-size: 20px; font-weight: bolder;" id="SubmitCss" onclick="saveCss()">Save</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    
+    function css() {
+  document.getElementById(`cssName`).style.backgroundColor = `#888`;
+  document.getElementById(`cssName2`).style.backgroundColor = `#fff`;
+  document.getElementById(`cssName3`).style.backgroundColor = `#fff`;
+  
+  document.getElementById(`css`).style.left = `0px`;
+  
+  document.getElementById(`html`).style.left = `602px`;
+  
+  document.getElementById(`js`).style.left = `1204px`;
+}
+
+function html() {
+  document.getElementById(`cssName2`).style.backgroundColor = `#888`;
+  document.getElementById(`cssName`).style.backgroundColor = `#fff`;
+  document.getElementById(`cssName3`).style.backgroundColor = `#fff`;
+  
+  document.getElementById(`css`).style.left = `602px`;
+  
+  document.getElementById(`html`).style.left = `0px`;
+  
+  document.getElementById(`js`).style.left = `1204px`;
+}
+
+function js() {
+  document.getElementById(`cssName3`).style.backgroundColor = `#888`;
+  document.getElementById(`cssName2`).style.backgroundColor = `#fff`;
+  document.getElementById(`cssName`).style.backgroundColor = `#fff`;
+  
+  document.getElementById(`css`).style.left = `1204px`;
+  
+  document.getElementById(`html`).style.left = `602px`;
+  
+  document.getElementById(`js`).style.left = `0px`
+}
+
+
+function out() {
+  document.getElementById(`output`).style.left = `0px`;
+  document.getElementById(`img1`).style.left = `-300px`;
+  document.getElementById(`img2`).style.left = `540px`;
+  
+  let HtmlCode = document.getElementById(`html-code`).value;
+  
+}
+
+
+function inout() {
+  document.getElementById(`output`).style.left = `-602px`;
+  document.getElementById(`img1`).style.left = `540px`;
+  document.getElementById(`img2`).style.left = `-300px`;
+}
+
+
+function run() {
+                  let htmlCode = document.getElementById('html-code').value;
+                  let cssCode = document.getElementById('css-code').value;
+                  let jsCode = document.getElementById('js-code').value;
+                  let output = document.getElementById('output');
+                  
+                  let run = document.getElementById('run');
+                  
+                  let preview = document.getElementById('preview');
+                  
+                  output.contentDocument.body.innerHTML = htmlCode+"<style>"+cssCode+"</style>";
+                  output.contentWindow.eval(jsCode.value);
+}
+
+
+let textAreaHtml = document.getElementById(`html-code`).innerHTML = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Page title</title>
+</head>
+<body>
+  
+</body>
+</html>`;
+
+document.getElementById(`html-code`).innerHTML = textAreaHtml;
+
+    
+    let button = document.getElementById(`btnCss`);
+    const longPress = (el, callback, duration) => {
+    let timeout;
+    const start = () => {
+      timeout = window.setTimeout(callback, duration);
+    }
+    const end = () => {
+      window.clearTimeout(timeout);
+    }
+      el.addEventListener(`touchstart`, start);
+      el.addEventListener(`touchend`, end);
+    }
+    document.getElementById(`fileNameCss`).innerHTML = localStorage.getItem(`stylecss`);
+    
+    
+    longPress(button, () => {
+      const firstName = prompt("Enter Filename");
+      if (firstName == "" || firstName == null) {
+         alert("You did not enter a value.");
+      } else {
+        
+        let stylecss = firstName + `.css`; 
+        
+        localStorage.setItem(`stylecss`, stylecss);
+         document.getElementById(`fileNameCss`).innerHTML = stylecss;
+      }
+    }, 1000)
+    
+    
+let button2 = document.getElementById(`btnCss2`);
+    const longPress2 = (el, callback, duration) => {
+    let timeout;
+    const start = () => {
+      timeout = setTimeout(callback, duration);
+    }
+    const end = () => {
+      window.clearTimeout(timeout);
+    }
+      el.addEventListener(`touchstart`, start);
+      el.addEventListener(`touchend`, end);
+    }
+    
+    document.getElementById(`cssName2`).innerHTML = localStorage.getItem(`indexhtml`);
+    
+    longPress2(button2, () => {
+      const secondName = prompt("Enter Filename");
+      if (secondName == "" || secondName == null) {
+         alert("You did not enter a value.");
+      } else {
+        
+        let indexhtml = secondName + `.html`; 
+        
+        localStorage.setItem(`indexhtml`, indexhtml);
+         document.getElementById(`cssName2`).innerHTML = indexhtml;
+      }
+    }, 1000)
+  </script>
+</body>
+</html>
